@@ -1,16 +1,17 @@
 {
-    "cSpell.words": [
-        "fastapi"
-    ],
-    "files.exclude": {
-        "**/.git": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/CVS": true,
-        "**/.DS_Store": true,
-        "**/Thumbs.db": true,
-        "**/__pycache__**": true,
-        "**/.venv": true
-    },
-    "explorerExclude.backup": {}
+  "cSpell.words": [
+    "fastapi"
+  ],
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/__pycache__**": true,
+    "**/.venv": true,
+    "**__init__.py": true
+  },
+  "explorerExclude.backup": {}
 }
