@@ -5,7 +5,7 @@ from pydantic import BaseModel
 
 class UserView(BaseModel):
     """User view model"""
-    id: Union[str, ObjectId, None]= None
+    id: Union[str, None]= None
     user_name: str
     full_name: Union[str, None] = None
     email: str

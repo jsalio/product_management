@@ -1,6 +1,8 @@
 from typing import Union
+
+from models.user import UserView, User
 from ..functions.generic import Generic
-from ...models.user import User, UserView
+
 
 class UserRepository:
     def __init__(self):
@@ -41,13 +43,13 @@ class UserRepository:
         """
         return self.to_view(self.generic.insert(document))
     
-    def update(self, document:dict):
+    def update(self,id:int, document:dict):
         """Update a document in the collection
         
         Args:
             document (dict): document to be updated
         """
-        return self.to_view(self.generic.update(document))
+        return self.to_view(self.generic.update(id,document))
     
     def update_property(self, id:str, key:str, value:Union[str,any]):
         """Update a property in a document
@@ -81,3 +83,4 @@ class UserRepository:
             id (str): document id
         """
         return self.generic.delete(id)
+    

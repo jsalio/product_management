@@ -1,8 +1,10 @@
 
 from bson.objectid import ObjectId
+
+from models.errors.invalid_exceptions import InvalidArgException
 from ..client import db_client
 from typing import Union
-from ...models.errors.invalid_exceptions import InvalidArgException
+
 
 
 class Generic :
